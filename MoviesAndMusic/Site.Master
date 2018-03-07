@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MoviesAndMusic.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - 我的 ASP.NET 应用程序</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server"><asp:ScriptManager runat="server">
+            <Scripts>
+                <%--若要了解有关在 ScriptManager 中绑定脚本的详细信息，请参阅 https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--框架脚本--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--站点脚本--%>
+            </Scripts>
+        </asp:ScriptManager>
+        
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <%--<a class="navbar-brand" runat="server" href="~/">应用程序名称</a>--%>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">主页</a></li>
+                        <li><a runat="server" href="~/Movies/MoviesDefault.aspx">电影</a></li>
+                        <li><a runat="server" href="~/Music/MusicDefault.aspx">音乐MV</a></li>
+                        <li><a runat="server" href="~/MV/MVDefault.aspx">视频短片</a></li>
+                        <li><a runat="server" href="~/About">关于</a></li>
+                        <li><a runat="server" href="~/Register.aspx">登录</a></li>
+                        <li><a runat="server" href="~/Login.aspx">注册</a></li><asp:SiteMapPath ID="SiteMapPath2" runat="server" CurrentNodeStyle-Font-Bold="true"></asp:SiteMapPath>
+                        <%--<li><a runat="server" href="~/Contact">联系方式</a></li>--%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <!--站点地图-->
+    <table class="table">
+        <tr>
+            <td class="ltd">
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1"></asp:TreeView>
+            </td>
+            <td class="rtd"><asp:SiteMapPath ID="SiteMapPath1" runat="server" CurrentNodeStyle-Font-Bold="true"></asp:SiteMapPath></td>
+            
+            <td class="rtd"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></td>
+        </tr>
+        
+        
+    </table>
+        <link href="CSS/MAIN.css" type="text/css"  rel="stylesheet"/>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - 我的 ASP.NET 应用程序</p>
+            </footer>
+                    
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <!--<siteMapNode url="Default.aspx" title="首页"  description="">
+    <siteMapNode url="Login.aspx" title="注册"  description="" />
+    <siteMapNode url="Register.aspx" title="登陆"  description="" />
+    <siteMapNode url="About.aspx" title="关于"  description="" />
+    <siteMapNode url="Upload.aspx" title="上传"  description="" />
+    <siteMapNode url="~/Movies/MoviesDefault.aspx" title="电影"  description="" />
+      <siteMapNode url="~/Movies/MoviesDetails.aspx" title="电影详情"  description="" />-->
+  
+  <siteMapNode url="Default" title="首页"  description="">
+    <siteMapNode url="Login" title="注册"  description="" />
+    <siteMapNode url="Register" title="登陆"  description="" />
+    <siteMapNode url="About" title="关于"  description="" />
+    <siteMapNode url="Upload" title="上传"  description="" />
+    <siteMapNode url="~/movies/MoviesDefault" title="电影" description="">
+      <siteMapNode url="~/Movies/MoviesDetails" title="电影详情"  description="" />
+      <siteMapNode url="~/Movies/WebForm1" title="电影列表"  description="" />
+    </siteMapNode>
+    <siteMapNode url="~/Music/MusicDefault" title="音乐"  description="" />
+    <siteMapNode url="~/MV/MVDefault" title="视频"  description="" />
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,24 @@
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\bin\Debug\DAL.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\bin\Debug\DAL.pdb
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\bin\Debug\Model.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\bin\Debug\Model.pdb
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\obj\Debug\DAL.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\DAL\obj\Debug\DAL.pdb
+D:\Visual Studio\个人项目\个人项目\DAL\bin\Debug\DAL.dll
+D:\Visual Studio\个人项目\个人项目\DAL\bin\Debug\DAL.pdb
+D:\Visual Studio\个人项目\个人项目\DAL\bin\Debug\Model.dll
+D:\Visual Studio\个人项目\个人项目\DAL\bin\Debug\Model.pdb
+D:\Visual Studio\个人项目\个人项目\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Visual Studio\个人项目\个人项目\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Visual Studio\个人项目\个人项目\DAL\obj\Debug\DAL.dll
+D:\Visual Studio\个人项目\个人项目\DAL\obj\Debug\DAL.pdb
+D:\个人项目\个人项目\DAL\bin\Debug\DAL.dll
+D:\个人项目\个人项目\DAL\bin\Debug\DAL.pdb
+D:\个人项目\个人项目\DAL\bin\Debug\Model.dll
+D:\个人项目\个人项目\DAL\bin\Debug\Model.pdb
+D:\个人项目\个人项目\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\个人项目\个人项目\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\个人项目\个人项目\DAL\obj\Debug\DAL.dll
+D:\个人项目\个人项目\DAL\obj\Debug\DAL.pdb

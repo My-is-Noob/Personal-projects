@@ -1,0 +1,24 @@
+﻿body {
+    font-size: 12px;
+    text-align: center;
+}
+
+.ltd {
+    width: 250px;
+    border: solid 1px #e0c2c2;
+    text-align: left;
+    vertical-align: top;
+}
+
+.rtd {
+    text-align: left;
+    /*border: solid 1px #e0c2c2;*/
+    /*height: 100%;*/
+    vertical-align: top;
+}
+
+.table {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+}

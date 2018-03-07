@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C769797F-B525-4D9F-A0D6-593BE843594D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoviesAndMusic</RootNamespace>
+    <AssemblyName>MoviesAndMusic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="CSS\MAIN.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Background\星空1.jpg" />
+    <Content Include="Image\Background\星空2.jpg" />
+    <Content Include="Image\Background\星空3.jpg" />
+    <Content Include="Image\MoviesImage\000001.jpg" />
+    <Content Include="Image\MoviesImage\000002.jpg" />
+    <Content Include="Image\MoviesImage\000003.jpg" />
+    <Content Include="Image\MoviesImage\000004.jpg" />
+    <Content Include="Image\MoviesImage\000005.jpg" />
+    <Content Include="Image\MoviesImage\000006.jpg" />
+    <Content Include="Image\MoviesImage\000007.jpg" />
+    <Content Include="Image\MoviesImage\000008.jpg" />
+    <Content Include="Image\MoviesImage\000009.jpg" />
+    <Content Include="Image\MoviesImage\000010.jpg" />
+    <Content Include="Image\MoviesImage\000011.jpg" />
+    <Content Include="Image\MoviesImage\000012.jpg" />
+    <Content Include="Image\MoviesImage\000013.jpg" />
+    <Content Include="Image\MoviesImage\000014.jpg" />
+    <Content Include="Image\MoviesImage\000015.jpg" />
+    <Content Include="Image\MoviesImage\000016.jpg" />
+    <Content Include="Image\MoviesImage\000017.jpg" />
+    <Content Include="Image\MoviesImage\000018.jpg" />
+    <Content Include="Image\MoviesImage\000019.jpg" />
+    <Content Include="Image\MoviesImage\000020.jpg" />
+    <Content Include="Image\MoviesImage\000021.jpg" />
+    <Content Include="Image\MoviesImage\000022.jpg" />
+    <Content Include="Image\MoviesImage\000023.jpg" />
+    <Content Include="Image\MoviesImage\000024.jpg" />
+    <Content Include="Image\MoviesImage\000025.jpg" />
+    <Content Include="Image\MoviesImage\000026.jpg" />
+    <Content Include="Image\MoviesImage\000027.jpg" />
+    <Content Include="Image\MoviesImage\000028.jpg" />
+    <Content Include="Image\MoviesImage\000029.jpg" />
+    <Content Include="Image\MoviesImage\000030.jpg" />
+    <Content Include="Image\MoviesImage\000031.jpg" />
+    <Content Include="Image\MoviesImage\000032.jpg" />
+    <Content Include="Image\MoviesImage\000033.jpg" />
+    <Content Include="Image\MoviesImage\000034.jpg" />
+    <Content Include="Image\MoviesImage\000035.jpg" />
+    <Content Include="Image\MoviesImage\000036.jpg" />
+    <Content Include="Image\MoviesImage\000037.jpg" />
+    <Content Include="Image\MoviesImage\000038.jpg" />
+    <Content Include="Image\MoviesImage\000039.jpg" />
+    <Content Include="Image\MoviesImage\000040.jpg" />
+    <Content Include="Image\MoviesImage\000041.jpg" />
+    <Content Include="Image\MoviesImage\000042.jpg" />
+    <Content Include="Image\MoviesImage\000043.jpg" />
+    <Content Include="Image\MoviesImage\000044.jpg" />
+    <Content Include="Image\MoviesImage\000045.jpg" />
+    <Content Include="Image\MoviesImage\000046.jpg" />
+    <Content Include="Image\MoviesImage\000047.jpg" />
+    <Content Include="Image\MoviesImage\000048.jpg" />
+    <Content Include="Image\MoviesImage\000049.jpg" />
+    <Content Include="Image\MoviesImage\000050.jpg" />
+    <Content Include="Image\MoviesImage\000051.jpg" />
+    <Content Include="Image\MoviesImage\000052.jpg" />
+    <Content Include="Image\MoviesImage\000053.jpg" />
+    <Content Include="Image\MoviesImage\000054.jpg" />
+    <Content Include="Image\MoviesImage\000055.jpg" />
+    <Content Include="Image\MoviesImage\000056.jpg" />
+    <Content Include="Image\MoviesImage\000057.jpg" />
+    <Content Include="Image\MoviesImage\000058.jpg" />
+    <Content Include="Image\MoviesImage\000059.jpg" />
+    <Content Include="Image\MoviesImage\000060.jpg" />
+    <Content Include="Image\MoviesImage\000061.jpg" />
+    <Content Include="Image\MoviesImage\000062.jpg" />
+    <Content Include="Image\MoviesImage\000063.jpg" />
+    <Content Include="Image\MoviesImage\000064.jpg" />
+    <Content Include="Image\MoviesImage\000065.jpg" />
+    <Content Include="Image\MoviesImage\000066.jpg" />
+    <Content Include="Image\MoviesImage\000067.jpg" />
+    <Content Include="Image\MoviesImage\000068.jpg" />
+    <Content Include="Image\MoviesImage\000069.jpg" />
+    <Content Include="Image\MoviesImage\000070.jpg" />
+    <Content Include="Image\MoviesImage\000071.jpg" />
+    <Content Include="Image\MoviesImage\000072.jpg" />
+    <Content Include="Image\MoviesImage\000073.jpg" />
+    <Content Include="Image\MoviesImage\000074.jpg" />
+    <Content Include="Image\MoviesImage\000075.jpg" />
+    <Content Include="Image\MoviesImage\000076.jpg" />
+    <Content Include="Image\MoviesImage\000077.jpg" />
+    <Content Include="Image\MoviesImage\000078.jpg" />
+    <Content Include="Image\MoviesImage\000079.jpg" />
+    <Content Include="Image\MoviesImage\000080.jpg" />
+    <Content Include="Image\MoviesImage\000081.jpg" />
+    <Content Include="Image\MoviesImage\000082.jpg" />
+    <Content Include="Image\MoviesImage\000083.jpg" />
+    <Content Include="Image\MoviesImage\000084.jpg" />
+    <Content Include="Image\MoviesImage\000085.jpg" />
+    <Content Include="Image\MoviesImage\000086.jpg" />
+    <Content Include="Image\MoviesImage\000087.jpg" />
+    <Content Include="Image\MoviesImage\000088.jpg" />
+    <Content Include="Image\MoviesImage\000089.jpg" />
+    <Content Include="Image\MoviesImage\000090.jpg" />
+    <Content Include="Image\MoviesImage\000091.jpg" />
+    <Content Include="Image\MoviesImage\000092.jpg" />
+    <Content Include="Image\MoviesImage\000093.jpg" />
+    <Content Include="Image\MoviesImage\000094.jpg" />
+    <Content Include="Image\MoviesImage\000095.jpg" />
+    <Content Include="Image\MoviesImage\000096.jpg" />
+    <Content Include="Image\MoviesImage\000097.jpg" />
+    <Content Include="Image\MoviesImage\000098.jpg" />
+    <Content Include="Image\MoviesImage\000099.jpg" />
+    <Content Include="Image\MoviesImage\000100.jpg" />
+    <Content Include="Image\MoviesImage\000101.jpg" />
+    <Content Include="Image\MoviesImage\000102.jpg" />
+    <Content Include="Image\图片无法显示.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Movies\CSS\evenFlow.css" />
+    <Content Include="Movies\CSS\loginDialog.css" />
+    <Content Include="Movies\CSS\MoviesDefault.css" />
+    <Content Include="Movies\CSS\style.css" />
+    <Content Include="Movies\JS\LoginDialog.js" />
+    <Content Include="Movies\JS\StyleSheet1.css" />
+    <Content Include="Movies\Movies.Master" />
+    <Content Include="Movies\MoviesDefault.aspx" />
+    <Content Include="Movies\MoviesDetails.aspx" />
+    <Content Include="Movies\WebForm1.aspx" />
+    <Content Include="Movies\WebForm2.aspx" />
+    <Content Include="Movies\WebMovies.aspx" />
+    <Content Include="Music\CSS\loginDialog.css" />
+    <Content Include="Music\CSS\MusicDefault.css" />
+    <Content Include="Music\CSS\StyleSheet1.css" />
+    <Content Include="Music\JS\jquery-1.8,3.min.js" />
+    <Content Include="Music\JS\LoginDialog.js" />
+    <Content Include="Music\Music.Master" />
+    <Content Include="Music\Music\MV\华语\GALA - 追梦赤子心.mkv" />
+    <Content Include="Music\Music\MV\华语\庄心妍 - 断了乱了.mkv" />
+    <Content Include="Music\Music\MV\华语\张栋梁 - 当你孤单你会想起谁.mkv" />
+    <Content Include="Music\Music\MV\华语\汪苏泷 - 得不到的温柔.mkv" />
+    <Content Include="Music\Music\MV\华语\王强 - 这次真的动了心.mkv" />
+    <Content Include="Music\Music\MV\日韩\Apink - NoNoNo.mkv" />
+    <Content Include="Music\Music\MV\日韩\PSY - 江南style.mkv" />
+    <Content Include="Music\Music\MV\日韩\PSY - 绅士.mkv" />
+    <Content Include="Music\Music\MV\日韩\仓木麻衣 - 恋に恋して.mkv" />
+    <Content Include="Music\Music\MV\日韩\花澤香菜 - 恋愛サーキュレーション.mkv" />
+    <Content Include="Music\Music\MV\欧美\Linkin Park - Numb.mkv" />
+    <Content Include="Music\Music\MV\欧美\Michael Jackson - Heal The World.mkv" />
+    <Content Include="Music\Music\MV\欧美\Westlife - Mandy.mkv" />
+    <Content Include="Music\Music\MV\欧美\Westlife - Seasons In The Sun.mkv" />
+    <Content Include="Music\Music\MV\欧美\Wiz Khalifa、Charlie Puth - See You Again.mkv" />
+    <Content Include="Music\Music\MV\粤语\Beyond - 海阔天空.mkv" />
+    <Content Include="Music\Music\MV\粤语\张国荣 - 风继续吹.mkv" />
+    <Content Include="Music\Music\MV\粤语\王杰 - 不浪漫罪名.mkv" />
+    <Content Include="Music\Music\MV\粤语\邓丽君 - 漫步人生路.mkv" />
+    <Content Include="Music\Music\MV\粤语\陈百强 - 偏偏喜欢你.mkv" />
+    <Content Include="Music\Music\其他\Bandari - 童年 %28纯音乐%29.mp3" />
+    <Content Include="Music\Music\其他\周维 - 二泉映月.mp3" />
+    <Content Include="Music\Music\其他\白玛多吉 - 梵音大悲咒.mp3" />
+    <Content Include="Music\Music\其他\纯音乐 - 世界上最悲伤最伤感最感动的音乐.mp3" />
+    <Content Include="Music\Music\其他\纯音乐 - 古筝十大名曲.mp3" />
+    <Content Include="Music\Music\其他\纯音乐 - 大自然催眠曲 高品质的睡眠.mp3" />
+    <Content Include="Music\Music\其他\纯音乐 - 女儿情 +牧羊曲+二泉吟+梁祝.mp3" />
+    <Content Include="Music\Music\其他\纯音乐 - 钢琴曲.mp3" />
+    <Content Include="Music\Music\其他\范世欢 - 广西仔.mp3" />
+    <Content Include="Music\Music\其他\赵海洋 - 梦中的婚礼.mp3" />
+    <Content Include="Music\Music\其他\郭燕 - 天空之城 %28钢琴版%29.mp3" />
+    <Content Include="Music\Music\其他\陈雷 - 欢喜就好.mp3" />
+    <Content Include="Music\Music\华语\GALA - 追梦赤子心.mp3" />
+    <Content Include="Music\Music\华语\丁香花_唐磊.mp3" />
+    <Content Include="Music\Music\华语\不再联系_夏天Alex.mp3" />
+    <Content Include="Music\Music\华语\丢了幸福的猪_姜玉阳.mp3" />
+    <Content Include="Music\Music\华语\关不上的窗_周传雄.mp3" />
+    <Content Include="Music\Music\华语\冬天的秘密_周传雄.mp3" />
+    <Content Include="Music\Music\华语\冲动的惩罚 - 刀郎.mp3" />
+    <Content Include="Music\Music\华语\勇气_梁静茹.mp3" />
+    <Content Include="Music\Music\华语\匆匆那年_王菲.mp3" />
+    <Content Include="Music\Music\华语\当你孤单你会想起谁_张栋梁.mp3" />
+    <Content Include="Music\Music\华语\成龙、刘涛 - 普通人.mp3" />
+    <Content Include="Music\Music\华语\我相信_杨培安.mp3" />
+    <Content Include="Music\Music\华语\有一种爱叫做放手_阿木.mp3" />
+    <Content Include="Music\Music\华语\水木年华 - 别哭,我最爱的人.mp3" />
+    <Content Include="Music\Music\华语\水木年华-一生有你.mp3" />
+    <Content Include="Music\Music\华语\汪峰 - 春天里.mp3" />
+    <Content Include="Music\Music\华语\筷子兄弟 - 老男孩.mp3" />
+    <Content Include="Music\Music\华语\群星 - 北京东路的日子.mp3" />
+    <Content Include="Music\Music\华语\范逸臣 - 放生.mp3" />
+    <Content Include="Music\Music\华语\马旭东 - 入戏太深.mp3" />
+    <Content Include="Music\Music\日韩\Apink - LUV %28Live%29.mp3" />
+    <Content Include="Music\Music\日韩\Apink - NoNoNo %28短版%29.mp3" />
+    <Content Include="Music\Music\日韩\Apink - 우리 그냥 사랑하게 해주세요 %28让我们就这样相爱吧%29.mp3" />
+    <Content Include="Music\Music\日韩\EXO - Baby, Don%27t Cry %28人鱼的眼泪%29.mp3" />
+    <Content Include="Music\Music\日韩\EXO - LOTTO %28Areia Kpop Remix版%29.mp3" />
+    <Content Include="Music\Music\日韩\EXO - 咆哮 %28으르렁%29.mp3" />
+    <Content Include="Music\Music\日韩\EXO、刘在石 - Dancing King.mp3" />
+    <Content Include="Music\Music\日韩\SISTAR - Alone.mp3" />
+    <Content Include="Music\Music\日韩\SISTAR - SHAKE IT %282015 SBS人气歌谣现场%29.mp3" />
+    <Content Include="Music\Music\日韩\SISTAR - 나혼자 %28Live%29.mp3" />
+    <Content Include="Music\Music\日韩\宇多田ヒカル - First Love.mp3" />
+    <Content Include="Music\Music\日韩\宇多田ヒカル - Merry Christmas Mr. Lawrence %28FYI%29.mp3" />
+    <Content Include="Music\Music\日韩\浜崎あゆみ - Dearest %28TV size%29.mp3" />
+    <Content Include="Music\Music\日韩\浜崎あゆみ - my all %28Live%29.mp3" />
+    <Content Include="Music\Music\日韩\浜崎あゆみ - my all %28纯音乐%29.mp3" />
+    <Content Include="Music\Music\日韩\浜崎あゆみ - Tell All.mp3" />
+    <Content Include="Music\Music\日韩\浜崎あゆみ - TO BE - Original Mix.mp3" />
+    <Content Include="Music\Music\日韩\花澤香菜 - 恋愛サーキュレーション.mp3" />
+    <Content Include="Music\Music\日韩\鬼束ちひろ - 月光.mp3" />
+    <Content Include="Music\Music\日韩\鬼束ちひろ - 螺旋.mp3" />
+    <Content Include="Music\Music\欧美\Adele - Rolling In the Deep.mp3" />
+    <Content Include="Music\Music\欧美\Avril Lavigne - Innocence %28清唱版%29.mp3" />
+    <Content Include="Music\Music\欧美\Avril Lavigne - Knocking On Heaven’s Door.mp3" />
+    <Content Include="Music\Music\欧美\Avril Lavigne - Skater Boy.mp3" />
+    <Content Include="Music\Music\欧美\Avril Lavigne - Tik Tok %28Originally By Ke%24Ha%29.mp3" />
+    <Content Include="Music\Music\欧美\Backstreet Boys - As Long As You Love Me %28Unplugged Version%29.mp3" />
+    <Content Include="Music\Music\欧美\Backstreet Boys - Fallen Angel.mp3" />
+    <Content Include="Music\Music\欧美\Backstreet Boys - Give Me Your Heart.mp3" />
+    <Content Include="Music\Music\欧美\Backstreet Boys - Missing You.mp3" />
+    <Content Include="Music\Music\欧美\Backstreet Boys - This Is Us.mp3" />
+    <Content Include="Music\Music\欧美\Elizabeth Mitchell - You Are My Sunshine.mp3" />
+    <Content Include="Music\Music\欧美\Grey、Avril Lavigne、Anthony Green - Wings Clipped.mp3" />
+    <Content Include="Music\Music\欧美\Groove Coverage - God Is A Girl.mp3" />
+    <Content Include="Music\Music\欧美\Kelly Clarkson、Avril Lavigne - Because of You+When You%27re Gone.mp3" />
+    <Content Include="Music\Music\欧美\Kim Taylor - I Am You.mp3" />
+    <Content Include="Music\Music\欧美\Lovestoned - Bye Bye Bye.mp3" />
+    <Content Include="Music\Music\欧美\Mariah Carey、Akon、Lil Wayne - Bye Bye %28R&amp;B混音版%29.mp3" />
+    <Content Include="Music\Music\欧美\Michael Jackson - Stranger In Moscow %28重制版%29.mp3" />
+    <Content Include="Music\Music\欧美\ONE OK ROCK、Avril Lavigne - Listen.mp3" />
+    <Content Include="Music\Music\欧美\Westlife - My Love.mp3" />
+    <Content Include="Music\Music\粤语\Beyond - 光辉岁月.mp3" />
+    <Content Include="Music\Music\粤语\Beyond - 真的爱你.mp3" />
+    <Content Include="Music\Music\粤语\G.E.M.邓紫棋 - 喜欢你.mp3" />
+    <Content Include="Music\Music\粤语\三个人在途上 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\你的味道 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\冰封 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\咖啡或茶 - Hotcha.MP3" />
+    <Content Include="Music\Music\粤语\唯一的你 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\好姊妹 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\学习期 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\对我有感觉 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\徐誉滕、陶喆、蔡依林、李克勤 - 做我老婆好不好+今天你要嫁给我+一生不变.mp3" />
+    <Content Include="Music\Music\粤语\李克勤 - 友情岁月 %28Live%29.mp3" />
+    <Content Include="Music\Music\粤语\李克勤 - 天梯 %28Live%29.mp3" />
+    <Content Include="Music\Music\粤语\李克勤 - 富士山下 %282015蒙面歌王第一季第一期现场%29.mp3" />
+    <Content Include="Music\Music\粤语\李克勤 - 月半小夜曲 %28清唱版%29.mp3" />
+    <Content Include="Music\Music\粤语\李克勤 - 遥远的她 %28Live%29.mp3" />
+    <Content Include="Music\Music\粤语\李克勤、黄凯芹 - 伤感的恋人.mp3" />
+    <Content Include="Music\Music\粤语\流泪会被感染的 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\爱.被爱 - Hotcha.mp3" />
+    <Content Include="Music\Music\粤语\陈奕迅 - 无条件.mp3" />
+    <Content Include="Music\Music\粤语\麦浚龙 - 耿耿于怀.mp3" />
+    <Content Include="Music\Music\音乐缩写.txt" />
+    <Content Include="Music\WebForm1.aspx" />
+    <Content Include="Music\WebForm2.aspx" />
+    <Content Include="MV\CSS\loginDialog.css" />
+    <Content Include="MV\CSS\MusicDefault.css" />
+    <Content Include="MV\CSS\MVDefault.css" />
+    <Content Include="MV\CSS\StyleSheet1.css" />
+    <Content Include="MV\JS\jquery-1.8,3.min.js" />
+    <Content Include="MV\JS\LoginDialog.js" />
+    <Content Include="MV\MV.Master" />
+    <Content Include="Movies\JS\jquery-1.8,3.min.js" />
+    <Content Include="WebForm1.aspx" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Music\MusicDefault.aspx" />
+    <Content Include="MV\MVDefault.aspx" />
+    <Content Include="MV\MV\1997到2017经典流行歌曲.mp4" />
+    <Content Include="MV\MV\一个被黑客耽误的音乐家，这节奏感流批流批.mp4" />
+    <Content Include="MV\MV\周杰伦精选.mp4" />
+    <Content Include="MV\MV\喜剧之王片段.mp4" />
+    <Content Include="MV\MV\搞笑de.mp4" />
+    <Content Include="MV\MV\搞笑电影片段.mp4" />
+    <Content Include="MV\MV\汤姆猫背景音乐.mp4" />
+    <Content Include="MV\MV\爆笑小品《三顾茅庐》.mp4" />
+    <Content Include="MV\MV\直到世界尽头.mp4" />
+    <Content Include="MV\MV\胡歌《六月的雨》.mp4" />
+    <Content Include="Register.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.8,3.min.js" />
+    <Content Include="Scripts\loginDialog.css" />
+    <Content Include="Scripts\LoginDialog.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\StyleSheet1.css" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Upload.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movies\Movies.Master.cs">
+      <DependentUpon>Movies.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies\Movies.Master.designer.cs">
+      <DependentUpon>Movies.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Movies\MoviesDefault.aspx.cs">
+      <DependentUpon>MoviesDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies\MoviesDefault.aspx.designer.cs">
+      <DependentUpon>MoviesDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movies\MoviesDetails.aspx.cs">
+      <DependentUpon>MoviesDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies\MoviesDetails.aspx.designer.cs">
+      <DependentUpon>MoviesDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movies\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movies\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movies\WebMovies.aspx.cs">
+      <DependentUpon>WebMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movies\WebMovies.aspx.designer.cs">
+      <DependentUpon>WebMovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Music\Music.Master.cs">
+      <DependentUpon>Music.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music\Music.Master.designer.cs">
+      <DependentUpon>Music.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicDefault.aspx.cs">
+      <DependentUpon>MusicDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music\MusicDefault.aspx.designer.cs">
+      <DependentUpon>MusicDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Music\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Music\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MV\MV.Master.cs">
+      <DependentUpon>MV.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MV\MV.Master.designer.cs">
+      <DependentUpon>MV.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MV\MVDefault.aspx.cs">
+      <DependentUpon>MVDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MV\MVDefault.aspx.designer.cs">
+      <DependentUpon>MVDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{8f1b02c9-eeb1-4e00-984f-cee2c77241b2}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{91a651db-0aba-4495-a764-c6b73fa0377d}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ad5c173b-7dbf-4fa7-9dc6-6afc7aaf5c90}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53890</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53890/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+﻿table {
+    background-position: center;
+    text-align: center;
+    /*background-color:#C8E2B1;*/
+    background-color:grey;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}

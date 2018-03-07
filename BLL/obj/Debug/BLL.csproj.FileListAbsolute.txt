@@ -1,0 +1,30 @@
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\bin\Debug\BLL.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\bin\Debug\BLL.pdb
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\bin\Debug\DAL.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\bin\Debug\Model.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\bin\Debug\DAL.pdb
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\bin\Debug\Model.pdb
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\obj\Debug\BLL.dll
+G:\Visual Studio 2017\第二学年\个人项目\个人项目\BLL\obj\Debug\BLL.pdb
+D:\Visual Studio\个人项目\个人项目\BLL\bin\Debug\BLL.dll
+D:\Visual Studio\个人项目\个人项目\BLL\bin\Debug\BLL.pdb
+D:\Visual Studio\个人项目\个人项目\BLL\bin\Debug\DAL.dll
+D:\Visual Studio\个人项目\个人项目\BLL\bin\Debug\Model.dll
+D:\Visual Studio\个人项目\个人项目\BLL\bin\Debug\DAL.pdb
+D:\Visual Studio\个人项目\个人项目\BLL\bin\Debug\Model.pdb
+D:\Visual Studio\个人项目\个人项目\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Visual Studio\个人项目\个人项目\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Visual Studio\个人项目\个人项目\BLL\obj\Debug\BLL.dll
+D:\Visual Studio\个人项目\个人项目\BLL\obj\Debug\BLL.pdb
+D:\个人项目\个人项目\BLL\bin\Debug\BLL.dll
+D:\个人项目\个人项目\BLL\bin\Debug\BLL.pdb
+D:\个人项目\个人项目\BLL\bin\Debug\DAL.dll
+D:\个人项目\个人项目\BLL\bin\Debug\Model.dll
+D:\个人项目\个人项目\BLL\bin\Debug\DAL.pdb
+D:\个人项目\个人项目\BLL\bin\Debug\Model.pdb
+D:\个人项目\个人项目\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\个人项目\个人项目\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\个人项目\个人项目\BLL\obj\Debug\BLL.dll
+D:\个人项目\个人项目\BLL\obj\Debug\BLL.pdb
